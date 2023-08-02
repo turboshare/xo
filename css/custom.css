@@ -1,0 +1,26 @@
+﻿
+.theme1 .main {
+    background: blueviolet !important;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    background: blueviolet;
+}
+
+.theme1 .autopool {
+    background: linear-gradient(45deg, black, transparent) !important;
+}
+
+.theme1 .statistics-block {
+    box-shadow: 0px 4px 30px rgba(10, 15, 82, 0.39);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background: #3C1362;
+    margin-bottom: 2px;
+}
+
+.theme1 table tr:nth-child(odd) td, .theme1 table tr th {
+    background: #3C1362;
+}
