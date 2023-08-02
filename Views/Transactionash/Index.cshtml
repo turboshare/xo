@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Transactions";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+<div class="content container clearfix">
+    <h1>Transactions</h1>
+    <div class="tab">
+        <ul>
+            <li><a href="#Referral">Referral</a></li>
+            <li><a href="#Pool-Payments">Base-Payments</a></li>
+        </ul>
+        <div class="table AutoPool-table even">
+            <div id="Referral">
+                <table class="text-left">
+                    <tr>
+                        <th>Transactions</th>
+                        <th>From address</th>
+                        <!-- <th>Level</th> -->
+                        <th>Amount</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="Pool-Payments">
+                <table class="text-left">
+                    <tr>
+                        <th>Transactions</th>
+                        <th>From address</th>
+                        <th>BASE NO.</th>
+                        <th>Amount</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

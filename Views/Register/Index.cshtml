@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewBag.Title = System.Configuration.ConfigurationManager.AppSettings["Title"] + " - Register";
+}
+
+<div class="main">
+    <div class="container relative clearfix">
+        <div class="city">
+            <img src="images/city.svg" alt="">
+        </div>
+        <div class="main-section-left">
+            <h1 class="small">My account</h1>
+            <div class="sub-title">Register</div>
+            <form class="login-form">
+                <input id="referralCode" type="text" placeholder="Account ID or TRX wallet">
+                <button id="register">Register</button>
+            </form>
+            <p>Already have account? <a href="/login">Login</a></p>
+
+            <p>
+                To register you will need only a wallet Tronlink - a Google Chrome extension (PC) and/or some other applications for mobile devices. Tested and safe applications:<br><br>
+                Wallet Tronlink <a href="https://www.tronlink.org/" target="_blank"> https://www.tronlink.org</a><br>
+                Wallet Tron Wallet <a href="https://www.tronwallet.me/" target="_blank"> https://www.tronwallet.me</a><br>
+                Pocket Wallet Token <a href="https://www.tokenpocket.pro/" target="_blank"> https://www.tokenpocket.pro</a><br> During registration you will need to enter the name or email address.
+            </p>
+            <div class="faqs registration">
+                <div class="faq-block">
+                    <div class="faq-block-top">MANUAL "CHECK BY PHONE"</div>
+                    <div class="faq-block-content">
+                        <p>Step 1. How to install the TronWallet wallet</p>
+
+                        <p>To register in the project using your smartphone, you need to install the <a href="https://www.tronwallet.me/" target="_blank">TronWallet</a> application. This is your personal wallet for Tron cryptocurrency, which will store the earned funds. The wallet belongs only to you and is used for automatic registration and authorization on the site.</p>
+
+                        <p>1) Download the application for your smartphone: <a href="https://www.tronwallet.me/" target="_blank">TronWallet</a></p>
+
+                        <p>2) We carry out the basic registration procedure. The login and password of the account should be securely stored in several places (preferably printed), as well as the 12 created words - this is the access key to the wallet. In the event of a LOSS of these control words (keys), access to the wallet will be impossible to restore.</p>
+
+
+                        <p>
+                            Step 2. How to buy Tron cryptocurrency
+                            First, you need to find out the address of your Tron wallet, which you made in step 1.
+                        </p>
+
+                        <p>
+                            1. Open the TronWallet app<br>
+                            2. Go to the Me tab, it is located at the bottom of the screen<br>
+                            3. Open the item "My wallet"<br>
+                            4. Copy your address from the blue card.
+                        </p>
+
+                        <p>It is recommended to immediately buy at least 4 Bases, which, together with registration, amounts to 3200 TPX.</p>
+
+                        <p>
+                            Note: When depositing with Bank cards, the exchange may for the first time to verify the card. Usually it's a photo of the card in the background page exchange. Subsequent replenishments are made instantly. If You do not want to verify the exchange of your card, that you can first recharge<a href="https://qiwi.com/" target="_blank"> QIWI</a> or <a href="https://money.yandex.ru/" target="_blank">Яндекс.Деньги</a> or <a href="https://payeer.com/ru/" target="_blank">Payeer.com</a> with my credit card (through the interface either of these two payment systems, and not through the exchanger), and then have such payment system through the exchanger to change to an Ethereum wallet without the card verification.<br><br>
+                            1. Go to the website <a href="https://www.bestchange.net/" target="_blank">bestchange.net</a><br>
+                            2.Choose the appropriate payment system with which you want to exchange for the required Tron currency<br>
+                            3.Choose the right service with the best rate<br>
+                            4. Go to the website of the selected exchanger and follow the simple instructions. The exchange is usually automatic and very fast<br>
+                            Make sure your Tron wallet has received funds
+                        </p>
+
+                        <p>
+                            Step 3. How to register in the @System.Configuration.ConfigurationManager.AppSettings["SiteTitle"] project via TronWallet<br>
+                            1) You need to copy the link <a href="/" target="_blank">@System.Configuration.ConfigurationManager.AppSettings["Url"]</a> and paste it in your TronWallet browser
+                        </p>
+
+                        <p>2) Follow the orange link "Registration in @System.Configuration.ConfigurationManager.AppSettings["Url"]"</p>
+                    </div>
+                </div>
+                <div class="faq-block">
+                    <div class="faq-block-top">MANUAL "REGISTER FROM PC"</div>
+                    <div class="faq-block-content">
+                        <p>Step 1. How to install the TronLink wallet</p>
+                        <p>To register in the project using a computer, you need to install the TronLink browser extension. This is your personal wallet for Tron cryptocurrency, which will store the earned funds. The wallet belongs only to you and is used for automatic registration and authorization on the site.</p>
+
+                        <p>
+                            1. Install the TronLink extension in your browser:<a href="https://chrome.google.com/webstore/detail/tronlinkï¼æ³¢å®é±åï¼/ibnejdfjmmkpcnlpebklmnkoeoihofec" target="_blank">extension for Chrome</a>
+                        </p>
+
+                        <p>2. We carry out the basic registration procedure. The login and password of the account should be securely stored in several places (preferably printed), as well as the 12 created words - this is the access key to the wallet. In the event of a LOSS of these control words (keys), access to the wallet will be impossible to restore.</p>
+
+
+                        <p>
+                            Step 2. How to buy Tron cryptocurrency (TRX)<br>
+                            First, you need to find out the address of your Tron wallet, which you made in step 1.
+                        </p>
+
+                        <p>
+                            1. Open the TronLink extension<br>
+                            2. Copy the address located in the colored area on the main screen
+                        </p>
+
+                        <p>Next, It is recommended to immediately buy at least 4 Bases, which, together with registration, amounts to 320 TPX.</p>
+
+                        <p>Note: When depositing with Bank cards, the exchange may for the first time to verify the card. Usually it's a photo of the card in the background page exchange. Subsequent replenishments are made instantly. If You do not want to verify the exchange of your card, that you can first recharge <a href="https://qiwi.com/" target="_blank">QIWI</a> or <a href="https://money.yandex.ru/" target="_blank">Яндекс.Деньги</a> or <a href="https://payeer.com/ru/" target="_blank">Payeer.com</a> with my credit card (through the interface either of these two payment systems, and not through the exchanger), and then have such payment system through the exchanger to change to an Ethereum wallet without the card verification.</p>
+
+                        <p>
+                            1. Go to the website <a href="https://www.bestchange.net/" target="_blank">bestchange.net</a><br>
+                            2.Choose the appropriate payment system with which you want to exchange for the required Tron currency<br>
+                            3.Choose the right service with the best rate<br>
+                            4. Go to the website of the selected exchanger and follow the simple instructions. The exchange is usually automatic and very fast<br>
+                            Make sure your Tron wallet has received funds
+                        </p>
+
+                        <p>
+                            Step 3. How to register in the @System.Configuration.ConfigurationManager.AppSettings["SiteTitle"] project via TronLink<br>
+                            1) Launch the browser, launch TronLink, check the balance - follow the referral link of the invitation from your partner
+                        </p>
+
+                        <p><a href="/" target="_blank">@System.Configuration.ConfigurationManager.AppSettings["Url"]</a></p>
+
+                        <p>2) Follow the orange link "Registration in @System.Configuration.ConfigurationManager.AppSettings["Url"]"</p>
+
+                        <p>3) Check the id of your invitee and click the "Register" button</p>
+
+                        <p>4) The TronLink payment page is launched - click the "Confirm" button</p>
+
+                        <p>After 5-10 seconds, your transaction will be confirmed and you will be able to watty in his private office. To buy new levels you need to log in using the wallet TronLink</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

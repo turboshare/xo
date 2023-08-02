@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = System.Configuration.ConfigurationManager.AppSettings["Title"] + " - Login";
+}
+<div class="main">
+    <div class="container relative clearfix">
+        <div class="city">
+            <img src="images/city.svg" alt="">
+        </div>
+        <div class="main-section-left">
+            <h1 class="small">My account</h1>
+            <div class="sub-title">Login</div>
+            <form class="login-form">
+                <input id="loginText" type="text" placeholder="Account ID or TRX wallet">
+                <button id="login">Login</button>
+                <button id="loginAuto">Login automatically</button>
+            </form>
+            <p>If you don’t have an account <a href="/register">Sign Up</a></p>
+            <p>After payment for registration 20 TRX, to enter your account you need <br></b>to indicate your TRON wallet number.</p>
+        </div>
+    </div>
+</div>
+

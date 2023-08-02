@@ -1,0 +1,60 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+    ViewBag.Title = "Dashboard";
+}
+<div class="content container clearfix">
+    <h1 id="AccountID">Account ID: </h1>
+    <div id="refLink"><div>Referral link:</div> </div>
+    <div class="auccount-users">
+        <div class="new-auccount-users">
+            @foreach (var item in Utility.GetPools())
+            {
+                <div class="auccount-user">
+                    <div class="auccount-user-img">
+                        <a href="#">
+                            <img src="/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="auccount-user-description">
+                        <p>Base @item.PoolNo users</p>
+                        <span>0</span>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="earning">
+        <div class="earning-block">
+            Referral Earning TRX
+            <span id="referralEarning">0</span>
+        </div>
+        <div class="earning-block">
+            Auto Base Earning TRX
+            <span id="autoPoolEarning">0</span>
+        </div>
+        <div class="earning-block">
+            Direct Team
+            <span id="directTeam">0</span>
+        </div>
+    </div>
+    <div class="products">
+        @foreach (var item in Utility.GetPools())
+        {
+            <div class="product">
+                <div class="product-status">Not Active</div>
+                <div class="product-title">BASE @item.PoolNo</div>
+                <div class="product-description">
+                    <span>@item.PoolAmount</span>
+                    <p>Worldwide @item.NoOfAccounts people pays you</p>
+                    <p>@item.ProfitPerAccount TRX each</p>
+                </div>
+                <div class="product-btn">
+                    <a class="received_payments">Received No. of Payments <span></span></a>
+                    <a id="buyPool@(item.PoolNo)" href="#">Buy</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
